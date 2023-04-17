@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 import { useEmails } from "../context/EmailContext"
 import { Home } from "./Home"
-import { useState } from "react";
 
 export const Inbox = () => {
     const {emailInboxData, handleClick, unReadEmail, readEmail} = useEmails();

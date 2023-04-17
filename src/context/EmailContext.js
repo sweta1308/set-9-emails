@@ -31,7 +31,7 @@ export const EmailProvider = ({children}) => {
 
     const readEmail = [];
     const unReadEmail = []
-    const emailsList = emailInboxData.map((mail) => mail.read ? readEmail.push(mail) : unReadEmail.push(mail) )
+    emailInboxData.map((mail) => mail.read ? readEmail.push(mail) : unReadEmail.push(mail) )
 
     useEffect(() => {
         getInboxData()
