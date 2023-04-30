@@ -8,7 +8,7 @@ export const Details = () => {
     const {id} = useParams()
 
     const findEmail = emailInboxData.find(email => email.id === Number(id))
-    console.log(findEmail)
+    console.log(findEmail) 
     return (
         <>
             <Link className="home" to='/'>Get Back to Home Page</Link>
